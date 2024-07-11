@@ -2,19 +2,29 @@
 	--black: #311F09;
 	--orange: #FF8A00;
 	--green: #3FA72F;
+    --white-orange: #ffe6c8;
+    --white: #fdfcdd;
 }
 
 body, html {
 	font-family: "Poppins", sans-serif;
-	font-size: 20px;
+	font-size: 14px;
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+    background-color: var(--white);
 }
 
 * {
 	box-sizing: border-box;
 }
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
 
 header {
 	padding-top: 51px;
@@ -30,6 +40,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+
 
 .header-content__last {
 	display: flex;
@@ -75,4 +86,59 @@ nav a:last-of-type {
 
 nav a.checked {
 	color: var(--orange);
+}
+
+/* main */
+
+main {
+    padding-top: 166px;
+}
+
+.main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content_about {
+    color: var(--black);
+    background-color: var(--white-orange);
+    padding: 10px 34px;
+    border-radius: 126px;
+    display: inline-block;
+    margin-bottom: 22px;
+}
+
+.main-content h1 {
+    color: var(--black);
+    font-size: 80px;
+    line-height: 110%;
+    margin-bottom: 30px;
+}
+
+.main-content p {
+    font-size: 20px;
+    line-height: 200%;
+    margin-bottom: 77px;
+    color: var(--black);
+}
+
+.main-content__button a:first-of-type{
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 17px 62px;
+    border-radius: 162px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transfrom .4s ease;
+}
+
+.main-content__button a:hover {
+    transform: scale(1.09);
+}
+
+.main_img {
+    display: flex;
+    float: right;
+    margin-top: -600px;
+    justify-content: space-around;
 }
