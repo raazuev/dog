@@ -4,6 +4,8 @@
 	--green: #3FA72F;
     --white-orange: #ffe6c8;
     --white: #fdfcdd;
+    --white-blue: #f0f0fd;
+    --blue: #85a8ed;
 }
 
 body, html {
@@ -129,16 +131,66 @@ main {
     border-radius: 162px;
     text-decoration: none;
     display: inline-block;
+    margin-bottom: 216px;
     transition: transfrom .4s ease;
 }
 
 .main-content__button a:hover {
     transform: scale(1.09);
+    background-color: var(--green );
 }
 
 .main_img {
     display: flex;
     float: right;
-    margin-top: -600px;
+    margin-top: -700px;
     justify-content: space-around;
+}
+
+/* welcome */
+
+.welcome {
+    background-color: var(--white-blue);
+    padding-top: 147px;
+    padding-bottom: 132px;
+}
+
+.welcome-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-inner h2 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 25px;
+    color: var(--black);
+}
+
+.welcome-inner h2 span {
+    color: var(--orange);
+}
+
+.welcome-inner p {
+    font-size: 20px;
+    color: var(--black);
+    line-height: 40px;
+    margin-bottom: 80px;
+}
+
+.welcome-inner a {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 17px 45px;
+    border-radius: 162px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+.welcome-inner a:hover {
+    transform: scale(1.1);
+    background-color: var(--blue);
 }
